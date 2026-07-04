@@ -1,0 +1,6 @@
+{
+  "name": "HackMate AI",
+  "description": "Intelligent Slack hackathon workspace powered by Cognee long-term AI memory.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
