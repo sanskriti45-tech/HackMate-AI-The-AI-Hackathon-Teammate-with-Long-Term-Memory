@@ -57,44 +57,6 @@ graph TD
     F -->|Query Context Response| B
     B -->|Interactive UI Rendering| G[HackMate Web Dashboard]
     G -->|Conversational Responses| A
-```
-
----
-
-## 📸 Screenshots
-
-### 🖥️ Dashboard View
-*The main nerve center displaying team workload, persistent summaries, urgent milestones, and recent activity.*
-<img width="1920" height="1080" alt="Screenshot (293)" src="https://github.com/user-attachments/assets/f55c944e-2223-4a83-9b6b-16743780af91" />
-
-
-### 💬 Slack Integration Hub
-*Configuring webhook channels, setting up listener bots, and mapping team aliases.*
-<img width="1920" height="1080" alt="Screenshot (288)" src="https://github.com/user-attachments/assets/4fb90900-3a8b-40d0-8862-cac40a625f26" />
-<img width="1920" height="1080" alt="Screenshot (289)" src="https://github.com/user-attachments/assets/35c0bb56-1399-49cc-b19c-56ef4b704a67" />
-
-
-### 🧠 Interactive AI Chat
-*Conversing with your context-aware virtual teammate, retrieving documents, and querying old channels.*
-<img width="1920" height="1080" alt="Screenshot (283)" src="https://github.com/user-attachments/assets/b6f1731c-9504-4dba-b56d-cfc0e2e4f75c" />
-
-
-### 📄 Documents AI Panel
-*Where hackathon briefs, PDF specifications, and schemas undergo comprehensive structural review.*
-<img width="1920" height="1080" alt="Screenshot (284)" src="https://github.com/user-attachments/assets/6fa6ad91-7dd9-4a9d-836d-f5ed6d56842c" />
-
-
-### 🕸️ Visual Memory Graph Explorer
-*A majestic, interactive node network demonstrating how project concepts, tasks, and users link together.*
-<img width="1920" height="1080" alt="Screenshot (290)" src="https://github.com/user-attachments/assets/5dd0c53b-6f03-4a0e-b523-bc61ab640527" />
-
-
-### 📋 Tasks Board & Timeline
-*A fully-featured kanban workflow indicating task categories, owner assignments, and pending deadlines.*
-<img width="1920" height="1080" alt="Screenshot (287)" src="https://github.com/user-attachments/assets/9938a137-1af2-499b-86c8-bbb57abf01b0" />
-<img width="1920" height="1080" alt="Screenshot (286)" src="https://github.com/user-attachments/assets/8f5ee917-813f-4a72-9e6f-934eb7188f2d" />
-
----
 
 ## 💻 Tech Stack
 
