@@ -45,18 +45,73 @@ No more scrollback fatigue. HackMate remembers your architecture, your files, yo
 
 ## 🛠️ Architecture
 
-The following diagram illustrates how conversation flows and knowledge is synthesized within HackMate AI:
-
-```mermaid
 graph TD
-    A[Slack Workspace / Channels / DMs] -->|Sync Conversation Logs| B(HackMate API Server)
-    E[User Uploaded Documents / PDF / MD] -->|Ingest Content| B
-    B -->|Entity & Relation Extraction| C{Gemini AI Engine}
-    C -->|Vector & Graph Topology| D[Cognee Long-Term Memory]
-    D -->|Persistent Knowledge Schema| F[(Knowledge Graph Database)]
-    F -->|Query Context Response| B
-    B -->|Interactive UI Rendering| G[HackMate Web Dashboard]
-    G -->|Conversational Responses| A
+
+%% User & Authentication
+A[User Login / Signup] --> B[HackMate Web Dashboard]
+B --> C[Authentication & Workspace Management]
+
+%% Slack Integration
+C --> D[Connect Slack Workspace]
+D --> E[Slack Events API]
+E --> F[Slack Channels / DMs / Files]
+
+%% Document Upload
+B --> G[Upload Documents<br/>PDF / DOCX / PPT / Markdown]
+G --> H[Document Processing Pipeline]
+
+%% Backend
+F --> I[HackMate Backend API]
+H --> I
+
+%% AI Processing
+I --> J[Gemini AI Engine]
+J --> K[Entity Extraction]
+J --> L[Task Detection]
+J --> M[Decision Detection]
+J --> N[Document Summarization]
+
+%% Cognee Memory
+K --> O[Cognee Memory Engine]
+L --> O
+M --> O
+N --> O
+
+%% Knowledge Graph
+O --> P[(Knowledge Graph)]
+O --> Q[(Vector Memory)]
+
+%% Retrieval
+P --> R[Context Retrieval]
+Q --> R
+
+%% AI Assistant
+R --> S[HackMate AI Assistant]
+
+%% Features
+S --> T[Answer User Questions]
+S --> U[Generate Daily Summaries]
+S --> V[Suggest New Tasks]
+S --> W[Recommend Project Decisions]
+S --> X[Generate Meeting Notes]
+S --> Y[Onboard New Team Members]
+
+%% Dashboard
+T --> Z[HackMate Dashboard]
+U --> Z
+V --> Z
+W --> Z
+X --> Z
+Y --> Z
+
+%% Notifications
+Z --> AA[Slack Notifications]
+Z --> AB[Email Notifications]
+Z --> AC[Task Timeline & Calendar]
+Z --> AD[Memory Graph Visualization]
+
+%% Feedback Loop
+AA --> E
 
 ## 💻 Tech Stack
 
