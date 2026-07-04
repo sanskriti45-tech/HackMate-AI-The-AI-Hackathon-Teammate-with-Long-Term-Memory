@@ -146,12 +146,6 @@ Open the **Memory Graph** visualizer. Drag nodes, expand relationships, and insp
 
 ---
 
-## 📽️ Demo Video
-Watch HackMate AI in action, from channel sync to memory traversal:
-> `[ Placeholder: Insert Demo Video URL/GIF Here ]`
-
----
-
 ## 🛣️ Future Roadmap
 
 * [ ] **Live Slack App Directory Launch:** Simplified single-click Slack app authorization.
