@@ -42,8 +42,11 @@ No more scrollback fatigue. HackMate remembers your architecture, your files, yo
 * **📰 AI Daily Summaries:** Automated high-level executive summaries generated daily to keep asynchronous teammates on the exact same page.
 
 ---
-
 ## 🛠️ Architecture
+
+The following diagram illustrates how conversations flow through HackMate AI and how knowledge is synthesized using Gemini AI and Cognee's persistent memory.
+
+```mermaid
 graph TD
     A[Slack Workspace / Channels / DMs] -->|Sync Conversation Logs| B(HackMate API Server)
     E[User Uploaded Documents / PDF / MD] -->|Ingest Content| B
@@ -57,8 +60,7 @@ graph TD
     G -->|Conversational Responses & Notifications| A
     D -->|Persistent Learning & Memory Updates| F
     H -->|Store Tasks, Decisions & Deadlines| D
-## 💻 Tech Stack
-
+```
 ### Frontend
 * **Core:** React 18+ (TypeScript), Vite
 * **Animations:** Motion (Framer Motion)
